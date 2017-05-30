@@ -1,0 +1,422 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplicación 10</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app6.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap/js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head>
+
+
+<body onLoad="MM_preloadImages('imagenes/zocalo2.jpg','imagenes/cccarmen2.jpg','imagenes/calle2.jpg','imagenes/m2.jpg','imagenes/v2.jpg','imagenes/v4.jpg','imagenes/c2.jpg')">
+<div data-role="page" id="Principal" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Atlixco, Puebla</h1>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/atlixco1.jpg" alt="atlixco1" title="atlixco1" id="wows1_0"/></li>
+		<li><img src="data1/images/atlixco2.png" alt="atlixco2" title="atlixco2" id="wows1_1"/></li>
+		<li><img src="data1/images/atlixco3.jpg" alt="atlixco3" title="atlixco3" id="wows1_2"/></li>
+		<li><img src="data1/images/atlixco4.jpg" alt="atlixco4" title="atlixco4" id="wows1_3"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/atlixco5.jpg" alt="css slider" title="atlixco5" id="wows1_4"/></a></li>
+		<li><img src="data1/images/atlixco6.jpg" alt="atlixco6" title="atlixco6" id="wows1_5"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="atlixco1"><span><img src="data1/tooltips/atlixco1.jpg" alt="atlixco1"/>1</span></a>
+		<a href="#" title="atlixco2"><span><img src="data1/tooltips/atlixco2.png" alt="atlixco2"/>2</span></a>
+		<a href="#" title="atlixco3"><span><img src="data1/tooltips/atlixco3.jpg" alt="atlixco3"/>3</span></a>
+		<a href="#" title="atlixco4"><span><img src="data1/tooltips/atlixco4.jpg" alt="atlixco4"/>4</span></a>
+		<a href="#" title="atlixco5"><span><img src="data1/tooltips/atlixco5.jpg" alt="atlixco5"/>5</span></a>
+		<a href="#" title="atlixco6"><span><img src="data1/tooltips/atlixco6.jpg" alt="atlixco6"/>6</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+<div data-role="main" class="ui-content">
+</div>
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Atlixco</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Zocalo de Atlixco</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Centro Cultural del Carmen</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Calle de las Flores</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Murales de Palacio Municipal</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Viveros de Cabrera</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Mirador Cerro de San Miguel.</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Tradiciones</h2>
+</a>
+</li>
+</ul>
+</div>
+
+<p><div data-role="collapsible" data-content-theme="false"></p>
+<h1>Programador:</h1>
+<div>
+<p>Sergio Hared Campeche Jimenez 4H</p>
+<img src="imagenes/sergio.png" width="200" height="200">
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="50" height="50">
+</div>
+<div>
+<h4>Aplicacion Diez</h4>
+<h4>Sergio Hared Campeche Jimenez</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Atlixco</h1>
+</div>
+<div data-role="content">
+<div>
+Atlixco es un Pueblo Mágico que aglutina una gran riqueza cultural, tradiciones, monumentos históricos y donde se pueden admirar paisajes únicos del Volcán Popocatépetl, por lo que es un destino turístico muy visitado.
+Es conocido por su buen clima y la gran actividad florística, comercial y turística que le valieron haber sido llamada Atlixco de las Flores y Granero de la Nueva España, durante la época colonial.
+<div data-role="collapsible" data-content-theme="false">
+<h1>Localización</h1>
+<div>
+Localizado al suroeste de la capital poblana, a unos 20 minutos, se puede llegar a dicho Pueblo Mágico por la autopista Atlixcayotl o bien por la carretera federal. Al arribar y tras recorrer unas cuantas calles, el visitante se encontrará con el zócalo.
+</div>
+<div><img src="imagenes/localizacion3.png" width="425px" height="462px"></div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion  Diez, SHCJ</h4>
+</div>
+</div>
+</div>
+
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Zocalo de Atlixco</h1>
+</div>
+<div data-role="content">
+<div>
+  <p>En el zócalo de Atlixco destacan monumentos erigidos a Benito Juárez, Isaac Ochoterena - creador de la biología moderna en México, Francisco Pablo Vásquez además una placa dedicada al "Aguacate Padre".
+    Antiguamente tenía una fuente de piedra la cual fue reubicada en el parque de la rotonda, en la actualidad tiene instalado un quiosco de estilo sevillano construido en la última mitad del siglo XX y alrededor del zócalo se encuentran colocadas bancas de azulejos con paisajes típicos.
+    
+</p>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagenes</h1>
+<div>
+  <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/zocalo2.jpg',1)"><img src="imagenes/zocalo1.jpg" width="350" height="300" id="Image4"></a> </p>
+</div>
+</div>
+</div>
+</div>
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Diez, SHCJ</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Centro Cultural del Carmen</h1>
+</div>
+<div data-role="content">
+<div>
+<p>Ubicado dentro del Exconvento del Carmen no te puedes perder el recorrido por las salas con contenido prehispánico, de tradiciones con la sala del Huey Atlixcayotl donde las etnias del municipio nos muestran un poquito de su cultura; asimismo el recorrido por la sala de Arte Sacro con las obras de Santa Clara, Memorias de un Templo.</p>
+<div data-role="collapsible" data-content-theme="false">
+  <h1>Imagenes</h1>
+  <div>
+  <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/cccarmen2.jpg',1)"><img src="imagenes/cccarmen1.jpg" width="350px" height="300px" id="Image5"></a></p>
+</div>
+</div>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Diez, SHCJ</h4>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Calle de las Flores</h1>
+</div>
+<div data-role="content">
+<div>
+Sobre la Avenida Hidalgo se encuentra esta emblemática calle denominada la Calle de las Flores, donde podrás apreciar sus renovadas fachadas adornadas con flores del municipio. Durante el recorrido podrás apreciar las casonas que fueron reconstruidas, hasta llegar a la Escalera Ancha lugar donde se realizaba el Huey Atlixcayotl y ahora tras su remodelación encontraras un reloj gigante hecho a base de flores.
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagenes</h1>
+<div>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/calle2.jpg',1)"><img src="imagenes/calle1.jpg" width="350px" height="300px" id="Image6"></a></p>
+</div>
+</div>
+</div>
+</div>
+ <div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Diez, SHCJ</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Murales de Palacio Municipal</h1>
+</div>
+<div data-role="content">
+<div>
+En el interior de Palacio Municipal así como en la planta baja del exterior (Ex Biblioteca), disfruta los murales de la Fundación de Atlixco, la Historia de la Educación en México o los Héroes de la Independencia y Reforma con diferentes estilos pictóricos, así como la vida obrera y textil que marco una época de grandeza en Atlixco, hasta los acontecimientos más sobresalientes en el municipio como lo es la Villa Iluminada.
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagenes</h1>
+<div>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','imagenes/m2.jpg',1)"><img src="imagenes/m1.jpg" width="350" height="300" id="Image7"></a></p>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion  Diez, SHCJ</h4>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Viveros de Cabrera</h1>
+</div>
+<div data-role="content">
+<div>
+Visita los viveros de Cabrera en donde encontrarás la más grande variedad y calidad de plantas y flores. Así como árboles ornamentales y frutales, donde Atlixco es un productor agrícola altamente reconocido nacional e internacionalmente.
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagenes</h1>
+<div>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','imagenes/v2.jpg',1)"><img src="imagenes/v1.jpg" width="350" height="300" id="Image8"></a></p>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/v4.jpg',1)"><img src="imagenes/v3.jpg" width="350" height="300" id="Image9"></a></p>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion  Diez, SHCJ</h4>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Mirador Cerro de San Miguel</h1>
+</div>
+<div data-role="content">
+<div>
+Si tienes ánimo aventurero te invitamos a subir al Cerro de San Miguel para que eches un vistazo de la Ciudad desde sus miradores y si todavía te quedan un poco de fuerzas, que subas la escalinata hasta la Ermita dedicada al Arcángel San Miguel; que cuenta la historia, encerró al diablito que hacía de las suyas en los solares dentro del pozo que se encuentra ahí. Su fiesta se celebra el 29 de Septiembre.
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagenes</h1>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/c2.jpg',1)"><img src="imagenes/c1.jpg" width="350" height="300" id="Image10"></a></p>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion  Diez, SHCJ</h4>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1> Tradiciones</h1>
+</div>
+<div data-role="content">
+<div>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/atlixcayotontli.jpg" alt="Atlixcayotontli" title="Atlixcayotontli" id="wows1_0"/></li>
+		<li><img src="data1/images/defile_de_calaveras.jpg" alt="defile_de_calaveras" title="defile_de_calaveras" id="wows1_1"/></li>
+		<li><img src="data1/images/feria_de_cecina.jpg" alt="feria_de_cecina" title="feria_de_cecina" id="wows1_2"/></li>
+		<li><img src="data1/images/feria_de_nochebuena.jpg" alt="feria_de_nochebuena" title="feria_de_nochebuena" id="wows1_3"/></li>
+		<li><img src="data1/images/fiesta_de_reyes.jpg" alt="fiesta_de_reyes" title="fiesta_de_reyes" id="wows1_4"/></li>
+		<li><img src="data1/images/huey_atlixcyotl.jpg" alt="huey_atlixcáyotl" title="huey_atlixcáyotl" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/tapete_monumental.jpg" alt="image slider" title="tapete_monumental" id="wows1_6"/></a></li>
+		<li><img src="data1/images/villa_iluminada.jpg" alt="villa_iluminada" title="villa_iluminada" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Atlixcayotontli"><span><img src="data1/tooltips/atlixcayotontli.jpg" alt="Atlixcayotontli"/>1</span></a>
+		<a href="#" title="defile_de_calaveras"><span><img src="data1/tooltips/defile_de_calaveras.jpg" alt="defile_de_calaveras"/>2</span></a>
+		<a href="#" title="feria_de_cecina"><span><img src="data1/tooltips/feria_de_cecina.jpg" alt="feria_de_cecina"/>3</span></a>
+		<a href="#" title="feria_de_nochebuena"><span><img src="data1/tooltips/feria_de_nochebuena.jpg" alt="feria_de_nochebuena"/>4</span></a>
+		<a href="#" title="fiesta_de_reyes"><span><img src="data1/tooltips/fiesta_de_reyes.jpg" alt="fiesta_de_reyes"/>5</span></a>
+		<a href="#" title="huey_atlixcáyotl"><span><img src="data1/tooltips/huey_atlixcyotl.jpg" alt="huey_atlixcáyotl"/>6</span></a>
+		<a href="#" title="tapete_monumental"><span><img src="data1/tooltips/tapete_monumental.jpg" alt="tapete_monumental"/>7</span></a>
+		<a href="#" title="villa_iluminada"><span><img src="data1/tooltips/villa_iluminada.jpg" alt="villa_iluminada"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">http://wowslider.com/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<ul>
+<li>Huey Atlixcáyotl</li>
+<div style="width:60%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="https://www.mexicodesconocido.com.mx/festival-huey-atlixcayotl-atlixco-puebla.html" data-role="button">
+<h2>Más información</h2>
+</a>
+</li>
+</ul>
+</div>
+<li>Villa Iluminada</li>
+<div style="width:60%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="https://www.todopuebla.com/eventos/villailuminadaenatlixco" data-role="button">
+<h2>Más información</h2>
+</a>
+</li>
+</ul>
+</div>
+<li>Tapetes Monumentales</li>
+<div style="width:60%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="http://municipiospuebla.mx/nota/2016-03-18/atlixco/atlixco-recibir%C3%A1-turistas-con-tapete-floral-de-semana-santa" data-role="button">
+<h2>Más información</h2>
+</a>
+</li>
+</ul>
+</div>
+<li>Fiestas de Reyes</li>
+<div style="width:60%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="http://turismoatlixco.com/fiesta-de-reyes/" data-role="button">
+<h2>Más información</h2>
+</a>
+</li>
+</ul>
+</div>
+<li>Desfile de Calaveras</li>
+<div style="width:60%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="http://turismoatlixco.com/desfile-de-calaveras/" data-role="button">
+<h2>Más información</h2>
+</a>
+</li>
+</ul>
+</div>
+<li>Feria de la Nochebuena</li>
+<div style="width:60%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="http://turismoatlixco.com/feria-de-la-noche-buena/" data-role="button">
+<h2>Más información</h2>
+</a>
+</li>
+</ul>
+</div>
+<li>Feria de la Cecina</li>
+<div style="width:60%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="https://www.todopuebla.com/eventos/feriadelacecinaenatlixco" data-role="button">
+<h2>Más información</h2>
+</a>
+</li>
+</ul>
+</div>
+<li>Atlixcayotontli</li>
+<div style="width:60%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="http://turismoatlixco.com/atlixcayotontli/" data-role="button">
+<h2>Más información</h2>
+</a>
+</li>
+</ul>
+</div>
+</ul>
+</div>
+</div>
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion  Diez, SHCJ</h4>
+</div>
+</div>
+
+</body>
+</html>
