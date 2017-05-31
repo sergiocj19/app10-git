@@ -395,13 +395,13 @@
 	text-transform: uppercase;	
 	font-size: 2em;
 }#wowslider-container1 .ws_images > ul{
-	animation: wsBasic 24s infinite;
-	-moz-animation: wsBasic 24s infinite;
-	-webkit-animation: wsBasic 24s infinite;
+	animation: wsBasic 32s infinite;
+	-moz-animation: wsBasic 32s infinite;
+	-webkit-animation: wsBasic 32s infinite;
 }
-@keyframes wsBasic{0%{left:-0%} 8.33%{left:-0%} 16.67%{left:-100%} 25%{left:-100%} 33.33%{left:-200%} 41.67%{left:-200%} 50%{left:-300%} 58.33%{left:-300%} 66.67%{left:-400%} 75%{left:-400%} 83.33%{left:-500%} 91.67%{left:-500%} }
-@-moz-keyframes wsBasic{0%{left:-0%} 8.33%{left:-0%} 16.67%{left:-100%} 25%{left:-100%} 33.33%{left:-200%} 41.67%{left:-200%} 50%{left:-300%} 58.33%{left:-300%} 66.67%{left:-400%} 75%{left:-400%} 83.33%{left:-500%} 91.67%{left:-500%} }
-@-webkit-keyframes wsBasic{0%{left:-0%} 8.33%{left:-0%} 16.67%{left:-100%} 25%{left:-100%} 33.33%{left:-200%} 41.67%{left:-200%} 50%{left:-300%} 58.33%{left:-300%} 66.67%{left:-400%} 75%{left:-400%} 83.33%{left:-500%} 91.67%{left:-500%} }
+@keyframes wsBasic{0%{left:-0%} 6.25%{left:-0%} 12.5%{left:-100%} 18.75%{left:-100%} 25%{left:-200%} 31.25%{left:-200%} 37.5%{left:-300%} 43.75%{left:-300%} 50%{left:-400%} 56.25%{left:-400%} 62.5%{left:-500%} 68.75%{left:-500%} 75%{left:-600%} 81.25%{left:-600%} 87.5%{left:-700%} 93.75%{left:-700%} }
+@-moz-keyframes wsBasic{0%{left:-0%} 6.25%{left:-0%} 12.5%{left:-100%} 18.75%{left:-100%} 25%{left:-200%} 31.25%{left:-200%} 37.5%{left:-300%} 43.75%{left:-300%} 50%{left:-400%} 56.25%{left:-400%} 62.5%{left:-500%} 68.75%{left:-500%} 75%{left:-600%} 81.25%{left:-600%} 87.5%{left:-700%} 93.75%{left:-700%} }
+@-webkit-keyframes wsBasic{0%{left:-0%} 6.25%{left:-0%} 12.5%{left:-100%} 18.75%{left:-100%} 25%{left:-200%} 31.25%{left:-200%} 37.5%{left:-300%} 43.75%{left:-300%} 50%{left:-400%} 56.25%{left:-400%} 62.5%{left:-500%} 68.75%{left:-500%} 75%{left:-600%} 81.25%{left:-600%} 87.5%{left:-700%} 93.75%{left:-700%} }
 
 #wowslider-container1 .ws_bullets  a img{
 	position:absolute;
